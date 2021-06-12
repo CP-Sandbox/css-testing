@@ -1,0 +1,57 @@
+/* background */
+
+.gradient-bg {
+    background: linear-gradient(222deg, #0775a3, #f18f4f, #0398c1, #1a292d, #e4651d);
+    background-size: 200% 1000%;
+
+    -webkit-animation: backGroundAnimation 30s ease infinite;
+    -moz-animation: backGroundAnimation 30s ease infinite;
+    -o-animation: backGroundAnimation 30s ease infinite;
+    animation: backGroundAnimation 30s ease infinite;
+}
+
+@-webkit-keyframes backGroundAnimation {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@-moz-keyframes backGroundAnimation {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@-o-keyframes backGroundAnimation {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@keyframes backGroundAnimation {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+
+/* TEXT */
+
+.text {
+    background: linear-gradient(
+90deg
+,#0775A3,#0398C1 15%,#F18F4F 35%,#0775A3 50%,#0398C1 65%,#F18F4F 85%,#ab6bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-size: 300% ;
+    background-position: -100%;
+    -webkit-animation: animatedText 3.5s linear infinite alternate-reverse;
+    animation: animatedText 3.5s linear infinite;
+}
+@keyframes animatedText {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
